@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aeada4b886c044539332545f79b9f202" Name="Diagram1">
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.AssignCourse" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Course" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Day" Width="1.5" PointX="6" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Department" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Designation" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.EnrollCourse" Width="1.5" PointX="8.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Grade" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Room" Width="1.5" PointX="6" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.RoomAllocation" Width="1.5" PointX="8.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Semester" Width="1.5" PointX="3.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Student" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityManagementMVCDBModel.Teacher" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_AssignCourse_dbo_Course_CourseId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_AssignCourse_dbo_Department_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_AssignCourse_dbo_Teacher_TeacherId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_Course_dbo_Department_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_Course_dbo_Semester_SemesterId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_EnrollCourse_dbo_Course_CourseId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_RoomAllocation_dbo_Course_CourseId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_RoomAllocation_dbo_Day_DayId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_RoomAllocation_dbo_Department_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_Student_dbo_Department_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_Teacher_dbo_Department_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_Teacher_dbo_Designation_DesignationId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_EnrollCourse_dbo_Student_Student_StudentId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityManagementMVCDBModel.FK_dbo_RoomAllocation_dbo_Room_RoomId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
