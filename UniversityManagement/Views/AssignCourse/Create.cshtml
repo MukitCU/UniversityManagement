@@ -34,7 +34,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.TakenCredit, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model=>model.TakenCredit, null, new { @id = "CreditToBeTakenTextBox", @class = "form-control" })
+                @Html.TextBoxFor(model=>model.TakenCredit, null, new { @id = "CreditToBeTakenTextBox", @class = "form-control", @readonly = "true" })
                 @Html.ValidationMessageFor(model => model.TakenCredit, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -42,7 +42,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.RemainingCredit, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.RemainingCredit, null, new { @id = "RemainingCreditTextBox", @class = "form-control" })
+                @Html.TextBoxFor(model => model.RemainingCredit, null, new { @id = "RemainingCreditTextBox", @class = "form-control", @readonly = "true" })
                 @Html.ValidationMessageFor(model => model.RemainingCredit, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -58,7 +58,7 @@
         <div class="form-group">
             @Html.Label("Course Code", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBox("CourseCode", null, new { @id = "CourseNameTextBox", @class = "form-control" })
+                @Html.TextBox("CourseCode", null, new { @id = "CourseNameTextBox", @class = "form-control", @readonly = "true" })
                 @*@Html.ValidationMessageFor(model => model.TakenCredit, "", new { @class = "text-danger" })*@
             </div>
         </div>
@@ -66,7 +66,7 @@
         <div class="form-group">
             @Html.Label("Course Credit", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBox("CourseCredit", null, new { @id = "CourseCreditTextBox", @class = "form-control" })
+                @Html.TextBox("CourseCredit", null, new { @id = "CourseCreditTextBox", @class = "form-control", @readonly = "true" })
 
                 @*@Html.ValidationMessageFor(model => model.RemainingCredit, "", new { @class = "text-danger" })*@
             </div>
