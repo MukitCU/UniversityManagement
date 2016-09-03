@@ -1,0 +1,58 @@
+﻿@model UniversityManagement.Models.AssignCourse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AssignCourse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TakenCredit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TakenCredit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RemainingCredit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RemainingCredit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.CourseCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.CourseCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.DeptCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.DeptCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teacher.TeacherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teacher.TeacherName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AssignCourseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
